@@ -1,0 +1,168 @@
+#exp{
+	 /* transform: rotateX(160deg) rotateY(45deg);	*/
+}
+
+.whole{
+	
+}
+
+.level{
+	float: left;
+	margin-left: 400px;
+	margin-top: 100px;
+	
+}
+
+.level:nth-child(2){
+	float: left;
+	margin-left: -290px;
+	margin-top: 140px; 	
+}
+
+.level:nth-child(3){
+	float: left;
+	margin-left: -380px;
+	margin-top: 180px;
+	animation-name: example_rotate;
+	animation-duration: 4s;
+	
+}
+
+.collect{
+	float:left;
+}
+
+.collect:nth-child(2){
+	margin-left: 100px;
+	margin-top: 30px;
+}
+
+.collect:nth-child(3){
+	margin-left: 100px;
+	margin-top: 60px;
+}
+
+.wrap{
+    width: 100px;
+    height: 100px;
+	margin-top: 250px;
+	margin-left: 200px;
+	position: absolute;
+}
+
+.wrap:nth-child(2){
+    width: 100px;
+    height: 100px;
+	margin-top: 130px;
+	margin-left: 200px;
+	position: absolute;
+}
+
+.wrap:nth-child(3){
+    width: 100px;
+    height: 100px;
+	margin-top: 10px;
+	margin-left: 200px;
+	position: absolute;
+}
+
+.cube{
+	float:left;
+	width: 200px;
+    height: 112px;
+    top: 0px;
+    transform-style: preserve-3d;
+    transform: rotateX(-22deg) rotateY(-38deg) rotateZ(0deg);
+    margin: auto;
+	position: relative;
+}
+
+.cube > div {
+	border-radius: 10px;
+    position: absolute;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    width: 112px;
+    height: 112px;
+    float: left;
+    overflow: hidden;
+    opacity: 0.85;
+}
+
+.common{
+	background-color:#FFF; border: 2px solid black; height:100px; width:100px;
+	opacity:1 ;
+	
+}
+
+.side1 {	
+  background-color:#000;
+  transform: rotateX(90deg) translateX(0px) translateY(0px) translateZ(56px);
+  animation-name: example1;
+  animation-duration: 4s;
+  
+}
+.side2 {
+  transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(56px);
+  animation-name: example2;
+  animation-duration: 4s;
+}
+.side3 {
+	background-color:#999;
+  transform: translateX(0px) translateY(0px) translateZ(56px);
+  animation-name: example3;
+  animation-duration: 4s;
+}
+.side4 {
+  transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(56px);
+  animation-name: example4;
+  animation-duration: 4s;
+}
+.side5 {
+  transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(56px);
+  animation-name: example5;
+  animation-duration: 4s;
+}
+.side6 {
+  transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(56px);
+  animation-name: example6;
+  animation-duration: 4s;
+}
+
+/*
+@keyframes example1 {
+  from { transform: rotateX(90deg) translateX(0px) translateY(0px) translateZ(56px); }
+  to { transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(56px); background-color:#FFF;}
+}
+
+@keyframes example2 {
+  from { transform: rotateY(-90deg) translateX(0px) translateY(0px) translateZ(56px); }
+  to { transform: translateX(0px) translateY(0px) translateZ(56px); background-color:#999; }
+}
+
+@keyframes example3 {
+  from { transform: translateX(0px) translateY(0px) translateZ(56px); }
+  to { transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(56px); background-color:#FFF;}
+}
+
+@keyframes example4 {
+  from { transform: rotateY(90deg) translateX(0px) translateY(0px) translateZ(56px); }
+  to { transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(56px); }
+}
+
+@keyframes example5 {
+  from { transform: rotateY(180deg) translateX(0px) translateY(0px) translateZ(56px); }
+  to { transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(56px); }
+}
+
+@keyframes example6 {
+  from { transform: rotateX(-90deg) translateX(0px) translateY(0px) translateZ(56px); }
+  to { transform: rotateX(90deg) translateX(0px) translateY(0px) translateZ(56px); background-color:#000; }
+} */
+
+@keyframes example_rotate {
+  0% { transform: rotateZ(0deg) translateX(0px) translateY(0px) translateZ(0px); transform-origin: 170% 300%;}
+  50% { transform: rotateZ(0deg) rotateX(0deg) translateX(0px) translateY(0px))}
+  100% { transform: rotateZ(0deg) translateX(0px) translateY(0px) translateZ(56px); transform-origin: 170% 300%;}
+}
+
